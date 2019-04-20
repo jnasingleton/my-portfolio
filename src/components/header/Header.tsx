@@ -3,10 +3,6 @@ import React from "react";
 import ExternalLinks from "./ExternalLinks";
 
 export default class Header extends React.Component {
-  //onhover of header__internal-links-button
-  //display: x for header__internal-links-vr
-  //else display: none
-
   render() {
     return (
       <React.Fragment>
@@ -19,22 +15,30 @@ export default class Header extends React.Component {
                   <i className="header__internal-links-button-icon fas fa-bars" />
                 </div>
                 <ul className={`header__internal-links-vr flexbox-col`}>
-                  <a href={`#about-me`} className={`header__internal-link-vr`}>
+                  <div
+                    className={`header__internal-link-vr internal-link-about-me`}
+                  >
                     About Me
-                  </a>
-                  <a href={`#projects`} className={`header__internal-link-vr`}>
+                  </div>
+                  <div
+                    className={`header__internal-link-vr internal-link-projects`}
+                  >
                     Projects
-                  </a>
+                  </div>
                 </ul>
               </div>
               <div className={`header__internal-links-menu-hr`}>
                 <ul className={`header__internal-links-hr flexbox-row`}>
-                  <a href={`#about-me`} className={`header__internal-link-hr`}>
+                  <div
+                    className={`header__internal-link-hr internal-link-about-me`}
+                  >
                     About Me
-                  </a>
-                  <a href={`#projects`} className={`header__internal-link-hr`}>
+                  </div>
+                  <div
+                    className={`header__internal-link-hr internal-link-projects`}
+                  >
                     Projects
-                  </a>
+                  </div>
                 </ul>
               </div>
             </div>

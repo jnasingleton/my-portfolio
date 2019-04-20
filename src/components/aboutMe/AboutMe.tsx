@@ -33,8 +33,6 @@ import React, { Component } from "react";
   //Jest
 */
 
-//https://www.pngtosvg.com/
-
 interface IProps {
   render?: () => JSX.Element;
 }
@@ -131,9 +129,8 @@ export default class AboutMe extends Component<IProps, IState> {
     technologies: string[]
   ) => {
     var technologiesList = technologies.map((name, index) => (
-      <div className={`about-me__technology-logo-container`}>
+      <div key={index} className={`about-me__technology-logo-container`}>
         <img
-          key={index}
           className={`about-me__technology-logo`}
           src={require("../../assets/svgs/" + name + ".svg")}
           alt={name}

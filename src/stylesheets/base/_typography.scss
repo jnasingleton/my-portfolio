@@ -25,6 +25,15 @@ p {
   }
 }
 
+.p-like {
+  font-weight: 300;
+  line-height: 2;
+  a {
+    color: $color-primary;
+    font-weight: 500;
+  }
+}
+
 .heading {
   color: #353a47;
   font-size: 1.5rem;
@@ -93,7 +102,7 @@ span.highlight {
   padding-left: 0.5rem;
 }
 .pad-left-2 {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .height-fill {

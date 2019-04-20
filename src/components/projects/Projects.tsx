@@ -6,9 +6,8 @@ const project_technologies: string[] = ["git", "typescript", "sass", "react"];
 export default class Projects extends Component {
   generateTechBar = (technologies: string[]) => {
     var technologiesList = technologies.map((name, index) => (
-      <div className={`about-me__technology-logo-container`}>
+      <div key={index} className={`about-me__technology-logo-container`}>
         <img
-          key={index}
           className={`projects__project-technology-logo`}
           src={require("../../assets/svgs/" + name + ".svg")}
           alt={name}
@@ -99,18 +98,13 @@ export default class Projects extends Component {
               </div>
               <div className={`projects__project-features`}>
                 <div className={`small-section-title`}>Notable Features</div>
-                <p className={`pad-left`}>
-                  <ul className={`pad-left-2`}>
-                    <li>Mobile-First Responsive Design</li>
-                    <li>
-                      Component based structure that is easy to extend and
-                      scale.
-                    </li>
-                    <li>
-                      Clear and powerful CSS using BEM and SASS guidelines.
-                    </li>
-                  </ul>
-                </p>
+                <ul className={`pad-left-2 p-like`}>
+                  <li>Mobile-First Responsive Design</li>
+                  <li>
+                    Component based structure that is easy to extend and scale.
+                  </li>
+                  <li>Clear and powerful CSS using BEM and SASS guidelines.</li>
+                </ul>
               </div>
               <div className={`projects__project-lessons`}>
                 <div className={`small-section-title`}>Lessons Learned</div>
