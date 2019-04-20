@@ -1,0 +1,23 @@
+.flexbox {
+  &-col {
+    @include flexbox;
+    flex-direction: column;
+    &-vr {
+      background-image: linear-gradient(to right, #999, #ccc);
+      margin: 0 0.25rem;
+      height: 100%;
+    }
+  }
+  &-row {
+    @include flexbox;
+    flex-direction: row;
+    &-hr {
+      background-image: linear-gradient(to bottom, #999, #ccc);
+      margin: 0 0.25rem;
+      width: 100%;
+    }
+  }
+}
+.flex-grow {
+  flex-grow: 1;
+}

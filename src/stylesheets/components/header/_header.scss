@@ -1,0 +1,131 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header component.
+// -----------------------------------------------------------------------------
+
+.header {
+  color: #fff;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    background-color: $header-bg-color;
+    width: 100%;
+    height: calc(
+      #{$header__nav-bar---height} + 2 *#{$header__nav-bar---vmargin} + #{$header__main---height}
+    );
+    z-index: -1;
+  }
+
+  &__nav-bar {
+    padding: 0;
+    margin: $header__nav-bar---vmargin 10vw;
+    height: $header__nav-bar---height;
+  }
+
+  &__internal-links-menu {
+    margin: 0;
+  }
+
+  &__internal-links-button {
+    font-size: 2rem;
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+    &:hover {
+      + .header__internal-links-vr {
+        display: flex;
+        position: absolute;
+        list-style: none;
+        font-size: 1.5rem;
+        padding: 0.5rem 0 0 0;
+        margin: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  &__internal-links-vr {
+    display: none;
+    &:hover {
+      display: flex;
+      position: absolute;
+      list-style: none;
+      font-size: 1.5rem;
+      padding: 0.5rem 0 0 0;
+      margin: 0;
+      align-items: flex-start;
+    }
+  }
+
+  &__internal-link-vr {
+    @include ResetLink();
+    transition: 150ms ease-in-out;
+
+    &:hover {
+      //transform: translateX(0.5rem);
+      color: $color-primary;
+    }
+  }
+
+  &__internal-links-hr {
+    list-style: none;
+    font-size: 1.5rem;
+    width: 17.5rem;
+    justify-content: space-between;
+    padding: 0;
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
+  }
+
+  &__internal-link-hr {
+    @include ResetLink();
+    transition: 150ms ease-in-out;
+
+    &:hover {
+      transform: translateY(0.5rem);
+      color: $color-primary;
+    }
+  }
+
+  ///
+
+  &__external-links {
+    font-size: 1.25rem;
+    justify-content: flex-end;
+  }
+
+  &__external-link {
+    @include ResetLink();
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 150ms ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 1.25rem;
+    }
+
+    &:hover {
+      transform: translateY(0.5rem);
+      color: $color-primary;
+    }
+  }
+
+  &__external-link-title {
+    margin-top: 0.5rem;
+    font-weight: 300;
+  }
+
+  &__main {
+    height: $header__main---height;
+  }
+
+  &__name-tag {
+    top: calc(-#{$header__nav-bar---height} / 2);
+    position: relative;
+    text-align: center;
+  }
+}

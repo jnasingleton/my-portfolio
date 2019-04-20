@@ -1,0 +1,101 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+
+p {
+  font-weight: 300;
+  line-height: 2;
+  a {
+    color: $color-primary;
+    font-weight: 500;
+  }
+}
+
+.heading {
+  color: #353a47;
+  font-size: 1.5rem;
+}
+
+.heading-title {
+  color: #2a4660;
+  font-size: 2rem;
+  font-weight: 600;
+  &--centered {
+    text-align: center;
+  }
+}
+
+.heading-secondary {
+  color: #2a4660;
+  font-size: 1.25rem;
+  font-weight: 600;
+  &--centered {
+    text-align: center;
+  }
+}
+
+.heading-bar {
+  margin-bottom: 40px;
+  width: 150px;
+  height: 2px;
+  background: #333;
+}
+
+span.highlight {
+  color: $color-primary;
+  font-weight: 500;
+}
+
+.link {
+  color: $color-primary;
+  text-decoration: none;
+
+  i {
+    margin-right: 0.25rem;
+  }
+
+  &--bold {
+    font-weight: 500;
+  }
+  &--inactive {
+    pointer-events: none;
+    color: rgba($color-primary, 0.5);
+  }
+}
+
+.small-section-title {
+  color: #2a4660;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.pad-wide {
+  padding: 0.5rem 10vw;
+}
+.pad-skinny {
+  padding: 0.5rem 20vw;
+}
+.pad-left {
+  padding-left: 0.5rem;
+}
+.pad-left-2 {
+  padding-left: 1rem;
+}
+
+.height-fill {
+  height: 100%;
+}

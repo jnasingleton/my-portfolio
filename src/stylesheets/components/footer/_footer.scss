@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header component.
+// -----------------------------------------------------------------------------
+
+.footer {
+  color: #fff;
+
+  &__background {
+    position: absolute;
+    background-color: $header-bg-color;
+    width: 100%;
+    //height: calc(#{$header__nav-bar---height} + #{$header__main---height});
+    height: #{$header__nav-bar---height};
+    z-index: -1;
+  }
+
+  &__nav-bar {
+    height: $header__nav-bar---height;
+  }
+
+  &__external-links {
+    font-size: 1.25rem;
+    //justify-content: flex-end;
+    justify-content: center;
+  }
+
+  &__external-link {
+    @include ResetLink();
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 150ms ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 1.25rem;
+    }
+
+    &:hover {
+      //transform: translateY(0.5rem);
+      transform: translateY(-0.5rem);
+      color: $color-primary;
+    }
+  }
+
+  &__external-link-title {
+    margin-top: 0.5rem;
+    font-weight: 300;
+  }
+}

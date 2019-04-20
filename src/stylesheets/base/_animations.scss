@@ -1,0 +1,110 @@
+// -----------------------------------------------------------------------------
+// This file contains animation keyframes
+// -----------------------------------------------------------------------------
+
+@keyframes animateInFromTop {
+  0% {
+    transform: translateY(-5rem);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@keyframes animateOutToTop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    transform: translateY(-2rem);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes animateInFromLeft {
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@keyframes animateOutToLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    transform: translateX(-2rem);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes fadeSlideInPure {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSlideOutPure {
+  0% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes Slide {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

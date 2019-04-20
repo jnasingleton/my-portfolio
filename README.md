@@ -1,0 +1,1 @@
+This project is a simple React website showcasing my professional portfolio. SASS (7-1 structure) and BEM methodology were key focuses of this project. Additional enhancements can be implemented to improve user experience on the front end, as well as possibly storing data in an external back-end server.
